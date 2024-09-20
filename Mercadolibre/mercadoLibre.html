@@ -1,46 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comision 25</title>
-    <link rel="stylesheet" href="mercadoLibre.css">
-</head>
-<body>
-    <header>
-        <img src="" alt="">
-        <img src="" alt="">
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi HTML</title>
+  </head>
+  <body>
     <main>
-        <h1 style="color: red; font-weight: bold;">Hola Mundo</h1>
-        <h2 style="color: blue; font-weight: 400; font-size: 40px;"class="titulo-secundario">Titulo 2</h2>
-        <h3 style="color: yellow; font-size: 60px;"class="titulo-secundario">Titulo 3</h3>
-        <h4 class="titulo-secundario">Titulo 4</h4>
-        <h5 class="titulo-secundario">Titulo 5</h5>
-        <h6 class="titulos-secundario">Titulo 6</h6>
-        <nav>
-            <ul>
-                <li class="elementoDeLista"><a href=""></a></li>
-                <li class="elementoDeLista"><a href=""></a></li>
-                <li class="elementoDeLista"><a href=""></a></li>
-                <li class="elementoDeLista"><a href=""></a></li>
-            </ul>
-            <ol>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ol>
-        </nav>
-        section>
+        <h1>Textos en HTML</h1>
+      <section>
+        <h2>Formateo de Texto:</h2>
+        <!-- B de dold (negrita)-->
+        <p>
+          De este texto la palabra que debe resaltar es <b>Aprender</b> y el
+          resto no.
+        </p>
+
+        <!--i de Itálica-->
+        <p>Una de las cosas mas importanes es ser <i>perseverante</i></p>
+
+        <!--La etiqueta strong le da importancia a la palabra y la muestra como negrita--->
+        <p>La palabra importante es : <strong>estudiar</strong></p>
+
+        <!--La etiqueta em le da imporancia a la palabra y se muestra como italica-->
+        <p>
+          Otra cosa muy importante es <em>ser toletante a la frustracion</em>
+        </p>
+
+        <!--La etiqueta small hará el texto pequeño-->
+        <p>El nombre de mi hermano menor es <small>Pedro</small></p>
+
+        <!--La etiqueta del nos servirá para mopstrar texto tachado (delete)-->
+        <p>El siguiente archivo ha sido eliminado: <del>archivo.txt</del></p>
+
+        <!--La etiqueta ins (inseted) hará que nuestro texto esté subrayado -->
+        <p>-El siguiente es mi libro favorito: <ins>-la fundación</ins></p>
+
+        <!--La etiqueta sub nos puede servir para fórmular quimicas (subíndice)-->
+        <p>la fórmula del agua es H <sub>2</sub>O</p>
+
+        <!--La etiqueta Sup nos sevirá para fórmulas matemáticas (superíndice)-->
+        <p>El teorema de pitáforas dice que a<sup>2</sup>+b2 = h2</p>
+
+        <!--La etiqueta mark hará que el texto se resalte -->
+        <p>Recuerda siemmpre intentarlo <mark>otra vez</mark></p>
+      </section>
+      <section>
+        <h2>Quotes : citas y referencias</h2>
+        <!--   Esta es una cita de un autor-->
+        <p>
+          Steve Jobs decía:
+          <q
+            >Lo que separa a los emprendedores existosos del resto es la
+            perseverancia</q
+          >
+        </p>
+
+        <!--abbr nos servirá para abreviar-->
+        <p>
+          ACA TRABAJO SASHA
+          <abbr title="Hypertext markup language">HTML</abbr> y
+          <abbr title="Cascading style stylesheet">CSS</abbr>
+        </p>
+
+        <!--Para poder firmar una "carta" usaremos la etiqueta adress-->
+        <address>
+          Escrito por Sergie Code <br />
+          Buenos aires <br />
+          Argentina
+        </address>
+
+        <!--La etiqueta cite nos va a servir para citar un autor o famoso-->
+        <p><cite>El grito</cite> de Eduart Munch fue pintado en 1893</p>
+
+        <bdo dir="rtl">Este texto saldrá al reves en el navegador</bdo>
+      </section>
+      <section>
+        <h2>Formularios:</h2>
+        <h3>Login</h3>
+        <!-- <form action="" method="get">
+            <label for="usuario">Ingrese su correo</label>
+            <input type="email" placeholder="Ingrese su usuario" name="usuario">
+            <label for="constraseña">Ingrese su constraseña</label>
+            <input type="password" placeholder="Ingrese su constraseña" name="constraseña">
+            <button type="submit">Login</button>
+        </form> -->
+
+        <h3>Contacto</h3>
+        <input action="" method="get">
+            <label for="usuario">Ingrese su dirección</label>
+            <input type="address" placeholder="Ingrese su dirección" name="direccion">
+            <label for="nombre">Ingrese su nombre</label>
+            <input type="text" placeholder="Ingrese su nombre" name="nombre">
+            <label for="apellido">Ingrese su apellido</label>
+            <input type="text" placeholder="Ingrese su apellido" name="apellido">
+            <label for="numero">Ingrese su telefono de contacto</label>
+            <input type="number" placeholder="Ingrese su numero" name="numero">
+            <textarea name="comentario" id="" maxlength="300"></textarea>
+            <input type="date" name="" id="">
+            <label for="">Motivo de contacto</label>
+            <input type="radio" name="motivo-contacto" value="reclamo">reclamo</input>
+            <input type="radio" name="motivo-contacto" value="consulta">consulta</input>
+            <input type="radio" name="motivo-contacto" value="interes">interes</input>
+            <label for="">Motivo de contacto</label>
+            <input type="checkbox" name="redes" value="facebook">facebook</input>
+            <input type="checkbox" name="redes" value="instagram">instagram</input>
+            <input type="checkbox" name="redes" value="tik-tok">tik-tok</input>
+            <input type="checkbox" name="redes" value="x">x</input>
+            <input type="checkbox" name="redes" value="threads">threads</input>
+            <input type="checkbox" name="redes" value="pinteres">pinteres</input>
+            <input type="checkbox" name="redes" value="discord">discord</input>
+            <label for="localidad">Localidad</label>
+            <select name="localidad" id="localidad">
+                <option value="San Miguel">San Miguel</option>
+                <option value="Bella Vista">Bella Vista</option>
+                <option value="Muñiz">Muñiz</option>
+                <option value="Jose C.Paz" selected>Jose C.Paz</option>
+            </select>
+            <!-- <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg" /> -->
+            <button type="reset">Cancea</button>
+            <button type="submit">Login</button>
+        </form>
+        
+      </section>
     </main>
-    <footer>
-        <p>Hola chicos como estan</p>
-        <br>
-        <span>Texto linea</span>
-        <span>Texto Adri</span>
-        <span>Texto Wicona</span>
-        <span>Texto Ivan</span>
-    </footer>
-</body>
+  </body>
 </html>
